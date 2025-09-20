@@ -7,10 +7,52 @@
     <meta name="description" content="Masajista Matriculado en Buenos Aires">
     <meta name="keyword"  content="Masaje deportivo, descontracturante, sedativo, quiromasaje">
     <title> MASAJISTA MATRICULADO @ Don Torcuato, Partido de Tigre, Zona Norte de Gran Buenos Aires</title>
-    <!--Conexión con JavaScrip-->
-    <script src="./js/myScript.js"></script>
+    <!-- Conexión con CSS-->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <a href="./assets/Entregable2, Simons.zip" target="_blank" download="./assets/Entregable2, Simons.zip">DESCARGAR PREENTREGA 2 DE JAVASRIPT.</a>
+    <header>ENCABEZADO
+
+    </header>
+    <main>
+        <h1>Solicitud de turno.</h1>
+        <p>Por favor complete el formulario.</p>
+        <form id="formulario-masajes">
+            <label for="nombre">Nombre/s:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido/s:</label>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad"><br>
+            <!--Avisar a los menores de edad que va a ser necesario que acompañe un tutor.-->
+            <!--Consulta si la persona es jubilada para aplicar descuento del 20%.-->
+            <fieldset id="consulta-jubilacion">
+                <legend>¿Es ud. jubilado/a?</legend>
+                <input type="radio" id="si-jubilado" name="jubilacion" value="si">
+                <label for="si">SI</label><br>
+                <input type="radio" id="no-jubilado" name="jubilacion" value="no">
+                <label for="no">NO</label><br>
+            </fieldset>
+            <label for="nombre-tutor" id="nombre-tutor1">Nombre del tutor/acompañante:</label>
+            <input type="text" id="nombre-tutor2" name="nombre-tutor"><br>
+            <label for="edad-tutor" id="edad-tutor1">Edad del tutor/acompañante:</label>
+            <input type="text" id="edad-tutor2" name="edad-tutor"><br>
+            <label for="duracion">Por favor seleccione la duración de tu sesión de masajes:</label>
+            <select id="duracion" name="duracion">
+                <option id="treintaMinutos" value="5000">30'</option>
+                <option id="sesentaMinutos" value="10000">60'</option>
+                <option id="noventaMinutos" value="15000">90'</option>
+            </select><br>            
+            <label for="dolores">¿En qué partes del cuerpo sientes dolor? (Ej.: espalda, cintura, cuello, etc.)</label>
+            <input type="text" id="dolores" name="dolores"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        FOOTER<br>
+        <a href="./assets/Entregable2, Simons.zip" target="_blank" download="./assets/Entregable2, Simons.zip">DESCARGAR ENTREGA 2 DE JAVASRIPT.</a>
+    </footer>
+    <!--Conexión con JavaScrip--->
+    <script src="./js/myScript.js"></script>
 </body>
 </html>
